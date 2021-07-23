@@ -11,6 +11,33 @@ import Header from './components/Header.vue';
   components: {
     Header,
   },
+  data() {
+    return {
+      tasks: []
+    }
+  },
+  created() {
+    this.tasks = [
+      {
+        id: 1,
+        text: "Fix guestroom Plumbing",
+        day: "July 22nd at 1:30pm",
+        reminder: true
+      },
+            {
+        id: 2,
+        text: "Gather supplies for dump run",
+        day: "July 23th at 11:30am",
+        reminder: true
+      },
+            {
+        id: 3,
+        text: "Get truck and trailer for dump run",
+        day: "July 24nd at 10:30am",
+        reminder: true
+      },
+    ]
+  }
 })
 export default class App extends Vue {}
 </script>
